@@ -11,8 +11,16 @@
             <button type="submit">Somar</button>
         </form>
 
+         <div class="result-display" *ngIf="resultado">  <!--condicional if do comomModule para renderização -->
+            <p>Seu Resultado está abaixo:</p>
+        </div>
+
+        @if (resultado) { <!--renderização condicional-->
+            
         <div class="result-display">
             <p>Resultado <span id="result">{{resultado}}</span></p>
         </div>
+        }
+
     </div>
 </div>
